@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="./fbScript.js"></script>
+
+  <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="true"
+    data-auto-logout-link="false" data-use-continue-as="true"></div>
+
+
+  <div id="status"> </div>
+  <div id="fb-root"> </div>
+
+  <form action="/api/auth/facebook" method="post" name="fbForm" style="display: none;">
+    <input id="userID" name="fbUserID" type="text">
+    <input id="token" name="fbToken" type="text">
+    <button></button>
+  </form>
+
+  <button onclick="logout()">log out</button>
+
+</body>
+
+</html>
