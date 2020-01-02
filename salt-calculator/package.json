@@ -1,0 +1,36 @@
+{
+  "name": "salt-calculator",
+  "version": "1.0.0",
+  "description": "Today you will setup a new project from scratch with `npm` and `git`. At the end of the day you will have a working caculator with a CLI (command line interface), implementation. If you have time, you will also implement a REST interface.",
+  "main": "cli.js",
+  "scripts": {
+    "lint": "node ./node_modules/.bin/eslint *.js **/*.js",
+    "pretest": "npm run lint",
+    "test": "node ./node_modules/.bin/mocha --reporter spec --exit \"*.spec.js\"",
+    "prewatch": "npm run test",
+    "watch": "onchange '**/*.js' -- npm run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltsthlm/salt-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saltsthlm/salt-calculator/issues"
+  },
+  "homepage": "https://github.com/saltsthlm/salt-calculator#readme",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-mocha": "^5.2.0",
+    "jsdom": "^12.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "onchange": "^4.1.0",
+    "wdio-mocha-framework": "^0.6.3",
+    "wdio-spec-reporter": "^0.1.5"
+  }
+}
